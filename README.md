@@ -6,6 +6,6 @@ The algorithm is based on the paper: Pan J, Tompkins W J. A real-time QRS detect
 ## Flow Chart
 ![Alt text](/path/to/ECG_detect.png)
 ## Analysis Criteria
-Bradycardia         $$RR_t>1.5s$$ or $$AR_t>1.2s$$
+Bradycardia         ![](http://www.forkosh.com/mathtex.cgi? $$RR_t>1.5s$$)
 ## Code Structure
 
