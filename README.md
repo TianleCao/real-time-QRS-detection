@@ -8,9 +8,9 @@ The algorithm is based on the paper: Pan J, Tompkins W J. A real-time QRS detect
 ## Analysis Criteria
 ![Alt text](/imgs/criteria.png)
 ## Code Structure
-*ECG_demo*: main function. It will plot the ECG signal in real time.  
-*rate_cal*: calculate real-time heart rate. It has been optimized for time efficiency.  
-*ECG_diagnosis*: abnormality judgement. All the results would be printed in the cammand line.  
+**ECG_demo**: main function. It will plot the ECG signal in real time.  
+**rate_cal**: calculate real-time heart rate. It has been optimized for time efficiency.  
+**ECG_diagnosis**: abnormality judgement. All the results would be printed in the cammand line.  
 ## Example
 The data has already been uploaded. Say we use 7.txt for evaluation. The results would be as follows:
 ![Alt text](/imgs/result_screenshot.png)  
@@ -18,3 +18,5 @@ After loading all the data, the average heart rate and diagnosis results would b
 ![Alt text](/imgs/result_screenshot2.png)  
 All the QRS detection results would be visualized as follows:
 ![Alt text](/imgs/result_QRSdetect.png)
+## Future Releases
+A version with a GUI and interface to serial port of MCU may be available in the future.
