@@ -6,11 +6,15 @@ The algorithm is based on the paper: Pan J, Tompkins W J. A real-time QRS detect
 ## Flow Chart
 ![Alt text](/path/to/imgs/ECG_detect.png)
 ## Analysis Criteria
-| Category        | Criteria           |
-| ------------- |-------------|
-|Bradycardia     |$RR_t>1.5s$ or $AR_t>1.2s$
-|Tachycardia     |$$AR_t<0.6s$$
-|Premature ventricular contractions      |$$RR_{t-1}<0.875AR_{t-2}$$ and $$QRS width>0.12s$$ and $$RR_{t-1}+RR_t=2AR_{t-2}$$
-|Atrial premature beats                  |$$RR_{t-1}<0.875AR_{t-2}$$ and $$QRS width normal$$ and $$RR_{t-1}+RR_t<2AR_{t-2}$$
+![Alt text](/path/to/imgs/criteria.png)
 ## Code Structure
-
+ECG_demo: main function. It will plot the ECG signal in real time.
+rate_cal: calculate real-time heart rate. It has been optimized for time efficiency
+ECG_diagnosis: abnormality judgement. All the results would be printed in the cammand line.
+## Example
+The data has already been uploaded. Say we use 7.txt for evaluation. The results would be as follows:
+![Alt text](/path/to/imgs/result_scrrenshot.png)  
+After loading all the data, the average heart rate and diagnosis results would be available.
+![Alt text](/path/to/imgs/result_scrrenshot2.png)
+All the QRS detection results would be visualized as follows:
+![Alt text](/path/to/imgs/result_QRSdetect.png)
