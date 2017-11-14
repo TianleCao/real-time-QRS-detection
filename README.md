@@ -4,8 +4,13 @@ A reliable QRS recognition algorithm would be of critical use in clinical senari
 ## Reference
 The algorithm is based on the paper: Pan J, Tompkins W J. A real-time QRS detection algorithm[J]. IEEE transactions on biomedical engineering, 1985 (3): 230-236.
 ## Flow Chart
-![Alt text](/path/to/ECG_detect.png)
+![Alt text](/path/to/imgs/ECG_detect.png)
 ## Analysis Criteria
-Bradycardia         ![](http://www.forkosh.com/mathtex.cgi? $$RR_t>1.5s$$)
+| Category        | Criteria           |
+| ------------- |-------------|
+|Bradycardia     |$RR_t>1.5s$ or $AR_t>1.2s$
+|Tachycardia     |$$AR_t<0.6s$$
+|Premature ventricular contractions      |$$RR_{t-1}<0.875AR_{t-2}$$ and $$QRS width>0.12s$$ and $$RR_{t-1}+RR_t=2AR_{t-2}$$
+|Atrial premature beats                  |$$RR_{t-1}<0.875AR_{t-2}$$ and $$QRS width normal$$ and $$RR_{t-1}+RR_t<2AR_{t-2}$$
 ## Code Structure
 
