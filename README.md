@@ -15,7 +15,7 @@ The algorithm is based on the paper:
 
 **ECG_diagnosis**: abnormality judgement. All the results would be printed in the cammand line.   
 ## Example
-The data has already been uploaded. Say we use 7.txt for evaluation. The results would be as follows:
+The data (200Hz, 1min length) has already been uploaded. Say we use 7.txt for evaluation. The results would be as follows:
 ![Alt text](/imgs/result_screenshot.png)  
 After loading all the data, the average heart rate and diagnosis results would be available.
 ![Alt text](/imgs/result_screenshot2.png)  
